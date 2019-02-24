@@ -59,12 +59,14 @@ namespace CursoASPNETMVC.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Nombre,Edad,Email,ConfirmarEmail,DivisibleEntreDos,Salario,MontoSolicitudPrestamo")] Persona persona)
+        public ActionResult Create([Bind(Include = "Id,Nombre,Edad,Email,ConfirmarEmail,DivisibleEntreDos,Salario,MontoSolicitudPrestamo,Resumen,FechaDeNacimiento")] Persona persona)
         {
             if (ModelState.IsValid)
             {
-                var personas = new List<Persona>() { new Models.Persona() { Nombre = "Edwin", Edad = 29, Email = "edwin.fabian.mosquea@gmail.com" } };
-                db.Personas.Add(persona);
+                
+                var personas = new List<Persona>() {persona };
+                personas.Add( new Persona() { Nombre="Edwin",Edad=29,Email="edwin.fabian.mosquea@gmail.com",ConfirmarEmail= "edwin.fabian.mosquea@gmail.com",DivisibleEntreDos=4,Salario=10000,MontoSolicitudPrestamo=40000 });
+                db.Personas.AddRange(personas);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -92,7 +94,7 @@ namespace CursoASPNETMVC.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Nombre,Edad,Email,ConfirmarEmail,DivisibleEntreDos,Salario,MontoSolicitudPrestamo")] Persona persona)
+        public ActionResult Edit([Bind(Include = "Id,Nombre,Edad,Email,ConfirmarEmail,DivisibleEntreDos,Salario,MontoSolicitudPrestamo,Resumen,FechaDeNacimiento")] Persona persona)
         {
             if (ModelState.IsValid)
             {

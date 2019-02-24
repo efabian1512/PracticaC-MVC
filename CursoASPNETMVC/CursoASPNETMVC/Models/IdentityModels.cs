@@ -64,23 +64,23 @@ namespace CursoASPNETMVC.Models
             }
             return base.ValidateEntity(entityEntry, items);
         }
-        public override int SaveChanges()
-        {
-            var entidades = ChangeTracker.Entries();
-            if(entidades != null)
-            {
-                foreach(var entidad in entidades.Where(c => c.State != EntityState.Unchanged))
-                {
-                    Auditar(entidad);
-                }
-            }
-            return base.SaveChanges();
-        }
+        //public override int SaveChanges()
+        //{
+        //    var entidades = ChangeTracker.Entries();
+        //    if(entidades != null)
+        //    {
+        //        foreach(var entidad in entidades.Where(c => c.State != EntityState.Unchanged))
+        //        {
+        //            Auditar(entidad);
+        //        }
+        //    }
+        //    return base.SaveChanges();
+        //}
 
-        private void Auditar(object entidad)
-        {
-            throw new NotImplementedException();
-        }
+        //private void Auditar(object entidad)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         public static ApplicationDbContext Create()
         {
