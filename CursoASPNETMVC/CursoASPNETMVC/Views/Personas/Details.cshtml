@@ -1,0 +1,74 @@
+﻿@model CursoASPNETMVC.Models.Persona
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Persona</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Edad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Edad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ConfirmarEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ConfirmarEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DivisibleEntreDos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DivisibleEntreDos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Salario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Salario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MontoSolicitudPrestamo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MontoSolicitudPrestamo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
