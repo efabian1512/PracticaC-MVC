@@ -18,7 +18,7 @@ namespace CursoASPNETMVC.Models
         [Display(ResourceType =(typeof(Recurso)),Name = "Persona_Nombre_Texto_Mostrar")]
         public string Nombre { get; set; }
         [Range(18, 60, ErrorMessage = "La edad minima es {1} y la maxima {2}")]
-        public int? Edad { get; set; }
+        public int Edad { get; set; }
         [Required]
         [StringLength(200)]
 
