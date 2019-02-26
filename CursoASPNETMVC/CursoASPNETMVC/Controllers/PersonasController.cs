@@ -91,14 +91,14 @@ namespace CursoASPNETMVC.Controllers
             //    return RedirectToAction("Index");
             //}
             //Metodo 1
-            var editarPersona1 = db.Personas.FirstOrDefault(x => x.Id == 2);
+            var editarPersona1 = db.Personas.FirstOrDefault(x => x.Id == 7);
             editarPersona1.Nombre = "Editado Metodo 1";
             editarPersona1.Edad = editarPersona1.Edad + 1;
             db.SaveChanges();
 
             //Metodo 2
             var editarPersona2 = new Persona();
-            editarPersona2.Id = 3;
+            editarPersona2.Id = 8;
             editarPersona2.Nombre = "Editado Metodo 2";
             editarPersona2.Edad = 54;
             db.Personas.Attach(editarPersona2);
