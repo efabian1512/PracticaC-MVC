@@ -16,7 +16,22 @@ namespace CursoASPNETMVC.Controllers
 
         // GET: Personas
         public ActionResult Index()
+
         {
+            //Seleccionando todas las personas
+
+            var ListadoPersonas = db.Personas.ToList();
+            //Seleccionando la persona con Id 5
+            var ListadoDePersonasId5 = db.Personas.Where(x => x.Id == 6).ToList();
+            //Seleccionando una columna
+            var UnaColumna = db.Personas.Select(x => x.Nombre).ToList();
+
+            //seleccionando varias columnas anonimas
+            var LstadoPersonasColumnasAnoimo = db.Personas.Select(x => new { Nombre = x.Nombre, Edad = x.Edad }).ToList();
+            //Seleccionando varias columnas de personas
+            var ListadoPersonasColumnas = db.Personas.Select(x => new { Nombre = x.Nombre, Edad = x.Edad }).ToList().
+                Select(x => new Persona() { Nombre = x.Nombre, Edad = x.Edad }).ToList();
+
             return View(db.Personas.ToList());
         }
 
@@ -123,6 +138,12 @@ namespace CursoASPNETMVC.Controllers
             {
                 return HttpNotFound();
             }
+            //return View();
+            //Persona persona = db.Personas.Find(id);
+            //db.Personas.Remove(persona);
+            //db.SaveChanges();
+
+            //return RedirectToAction("Index");
             return View(persona);
         }
 
