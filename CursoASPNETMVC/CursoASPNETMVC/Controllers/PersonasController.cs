@@ -50,9 +50,13 @@ namespace CursoASPNETMVC.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Personas.Add(persona);
+                var personas = new List<Persona>() { new Persona() { Nombre = "Edwin Fabian", Nacimiento = new DateTime(1989, 12, 15), Edad = 29 },
+                    new Persona() { Nombre="Ramon Fabian",Nacimiento = new DateTime (1993,2,4),Edad=26 },
+               new Persona() { Nombre="Frankely Fabian",Nacimiento = new DateTime (1997,11,25),Edad=21 } };
+                personas.Add(persona);
+                db.Personas.AddRange(personas);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Index"); 
             }
 
             return View(persona);
@@ -80,13 +84,31 @@ namespace CursoASPNETMVC.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "Id,Nombre,Nacimiento,Edad")] Persona persona)
         {
-            if (ModelState.IsValid)
-            {
-                db.Entry(persona).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            return View(persona);
+            //if (ModelState.IsValid)
+            //{
+            //    db.Entry(persona).State = EntityState.Modified;
+            //    db.SaveChanges();
+            //    return RedirectToAction("Index");
+            //}
+            //Metodo 1
+            var editarPersona1 = db.Personas.FirstOrDefault(x => x.Id == 2);
+            editarPersona1.Nombre = "Editado Metodo 1";
+            editarPersona1.Edad = editarPersona1.Edad + 1;
+            db.SaveChanges();
+
+            //Metodo 2
+            var editarPersona2 = new Persona();
+            editarPersona2.Id = 3;
+            editarPersona2.Nombre = "Editado Metodo 2";
+            editarPersona2.Edad = 54;
+            db.Personas.Attach(editarPersona2);
+            db.Entry(editarPersona2).Property(x => x.Nombre).IsModified = true;
+            db.SaveChanges();
+
+            var editarPersona3 = db.Entry(persona).State = EntityState.Modified;
+            db.SaveChanges();
+            return RedirectToAction("Index");
+            //return View(persona);
         }
 
         // GET: Personas/Delete/5
