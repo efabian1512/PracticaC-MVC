@@ -9,5 +9,6 @@ namespace CursoASPNETMVC.Models
     {
         public int CodigoDireccion { get; set; }
         public string Calle { get; set; }
+        public Persona Persona { get; set; }
     }
 }

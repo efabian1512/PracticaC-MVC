@@ -20,17 +20,27 @@ namespace CursoASPNETMVC.Controllers
         {
             //Seleccionando todas las personas
 
-            var ListadoPersonas = db.Personas.ToList();
-            //Seleccionando la persona con Id 5
-            var ListadoDePersonasId5 = db.Personas.Where(x => x.Id == 6).ToList();
-            //Seleccionando una columna
-            var UnaColumna = db.Personas.Select(x => x.Nombre).ToList();
+            //var ListadoPersonas = db.Personas.ToList();
+            ////Seleccionando la persona con Id 5
+            //var ListadoDePersonasId5 = db.Personas.Where(x => x.Id == 6).ToList();
+            ////Seleccionando una columna
+            //var UnaColumna = db.Personas.Select(x => x.Nombre).ToList();
 
-            //seleccionando varias columnas anonimas
-            var LstadoPersonasColumnasAnoimo = db.Personas.Select(x => new { Nombre = x.Nombre, Edad = x.Edad }).ToList();
-            //Seleccionando varias columnas de personas
-            var ListadoPersonasColumnas = db.Personas.Select(x => new { Nombre = x.Nombre, Edad = x.Edad }).ToList().
-                Select(x => new Persona() { Nombre = x.Nombre, Edad = x.Edad }).ToList();
+            ////seleccionando varias columnas anonimas
+            //var LstadoPersonasColumnasAnoimo = db.Personas.Select(x => new { Nombre = x.Nombre, Edad = x.Edad }).ToList();
+            ////Seleccionando varias columnas de personas
+            //var ListadoPersonasColumnas = db.Personas.Select(x => new { Nombre = x.Nombre, Edad = x.Edad }).ToList().
+            //    Select(x => new Persona() { Nombre = x.Nombre, Edad = x.Edad }).ToList();
+            //var persona = new Persona() { Id = 7 };
+            //db.Personas.Attach(persona);
+            //db.Direcciones.Add(new Direccion() { Calle = "Respaldo San Antonio #22. " ,Persona=persona});
+            //db.SaveChanges();
+            //var persona = db.Personas.Include("Direcciones").FirstOrDefault(x => x.Id == 7);
+            //var direcciones = persona.Direcciones;
+
+            var direccion = db.Direcciones.Include("Persona").FirstOrDefault(x => x.CodigoDireccion == 1);
+            var nombre = direccion.Persona.Nombre;
+
 
             return View(db.Personas.ToList());
         }

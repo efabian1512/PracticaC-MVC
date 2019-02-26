@@ -29,7 +29,7 @@ namespace CursoASPNETMVC.Models
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
-        //public DbSet<Direccion> Direcciones { get; set; }
+        public DbSet<Direccion> Direcciones { get; set; }
         public DbSet<Persona> Personas { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
 
@@ -37,6 +37,7 @@ namespace CursoASPNETMVC.Models
             modelBuilder.Properties<DateTime>().Configure(x => x.HasColumnType("datetime2"));
 
             modelBuilder.Properties<int>().Where(p => p.Name.StartsWith("Codigo")).Configure(p => p.IsKey());
+            modelBuilder.Entity<Direccion>().HasRequired(x => x.Persona);
 
             base.OnModelCreating(modelBuilder); 
         }
