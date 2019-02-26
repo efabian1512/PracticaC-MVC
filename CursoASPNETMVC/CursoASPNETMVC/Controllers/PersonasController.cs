@@ -34,19 +34,6 @@ namespace CursoASPNETMVC.Controllers
             }
             return View(persona);
         }
-        public JsonResult DivisibleEntre2(int DivisibleEntreDos)
-        {
-            bool EsValido;
-            if(DivisibleEntreDos % 2 == 0)
-            {
-                EsValido = true;
-
-            }else
-            {
-               EsValido = false;
-            }
-            return Json(EsValido,JsonRequestBehavior.AllowGet);
-        }
 
         // GET: Personas/Create
         public ActionResult Create()
@@ -55,18 +42,15 @@ namespace CursoASPNETMVC.Controllers
         }
 
         // POST: Personas/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que desea enlazarse. Para obtener 
+        // más información vea http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Nombre,Edad,Email,ConfirmarEmail,DivisibleEntreDos,Salario,MontoSolicitudPrestamo,Resumen,FechaDeNacimiento")] Persona persona)
+        public ActionResult Create([Bind(Include = "Id,Nombre,Nacimiento,Edad")] Persona persona)
         {
             if (ModelState.IsValid)
             {
-                
-                var personas = new List<Persona>() {persona };
-                personas.Add( new Persona() { Nombre="Edwin",Edad=29,Email="edwin.fabian.mosquea@gmail.com",ConfirmarEmail= "edwin.fabian.mosquea@gmail.com",DivisibleEntreDos=4,Salario=10000,MontoSolicitudPrestamo=40000 });
-                db.Personas.AddRange(personas);
+                db.Personas.Add(persona);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -90,11 +74,11 @@ namespace CursoASPNETMVC.Controllers
         }
 
         // POST: Personas/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que desea enlazarse. Para obtener 
+        // más información vea http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Nombre,Edad,Email,ConfirmarEmail,DivisibleEntreDos,Salario,MontoSolicitudPrestamo,Resumen,FechaDeNacimiento")] Persona persona)
+        public ActionResult Edit([Bind(Include = "Id,Nombre,Nacimiento,Edad")] Persona persona)
         {
             if (ModelState.IsValid)
             {

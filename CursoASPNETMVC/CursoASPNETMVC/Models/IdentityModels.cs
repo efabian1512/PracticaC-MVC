@@ -29,7 +29,7 @@ namespace CursoASPNETMVC.Models
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
-        public DbSet<Direccion> Direcciones { get; set; }
+        //public DbSet<Direccion> Direcciones { get; set; }
         public DbSet<Persona> Personas { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
 
