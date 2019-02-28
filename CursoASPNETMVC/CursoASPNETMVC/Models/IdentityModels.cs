@@ -37,7 +37,7 @@ namespace CursoASPNETMVC.Models
             modelBuilder.Properties<DateTime>().Configure(x => x.HasColumnType("datetime2"));
 
             modelBuilder.Properties<int>().Where(p => p.Name.StartsWith("Codigo")).Configure(p => p.IsKey());
-            modelBuilder.Entity<Direccion>().HasRequired(x => x.Persona).WithMany().HasForeignKey(x =>x.Persona_Id);
+            //modelBuilder.Entity<Direccion>().HasRequired(x => x.Persona).WithMany().HasForeignKey(x =>x.Persona_Id);
 
             base.OnModelCreating(modelBuilder); 
         }

@@ -7,12 +7,19 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using CursoASPNETMVC.Models;
+using System.Data.SqlClient;
 
 namespace CursoASPNETMVC.Controllers
 {
     public class PersonasController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
+
+        public class Estadisticas
+        {
+            public Sexo Sexo { get; set; }
+            public int Cantidad { get; set; }
+        }
 
         // GET: Personas
         public ActionResult Index()
@@ -37,17 +44,23 @@ namespace CursoASPNETMVC.Controllers
             //db.SaveChanges();
             //var persona = db.Personas.Include("Direcciones").FirstOrDefault(x => x.Id == 7);
             //var direcciones = persona.Direcciones;
-
+            //Propiedades de Navegacion
             //var direccion = db.Direcciones.Include("Persona").FirstOrDefault(x => x.CodigoDireccion == 1);
             //var nombre = direccion.Persona.Nombre;
-            var personas = db.Personas.ToString();
-            var direcciones = db.Direcciones.Select(x => new { x.CodigoDireccion, x.Calle }).ToString();
-            var DireccionPersonas = db.Direcciones.Join(db.Personas, dir => dir.Persona_Id, per => per.Id, (dir, per) => new { dir, per }).FirstOrDefault(x => x.dir.CodigoDireccion == 1).ToString();
-            var PersonaDirecciones = db.Personas.GroupJoin(db.Direcciones, per => per.Id, dir => dir.Persona_Id, (per, dir) => new { per, dir }).FirstOrDefault(x => x.per.Id == 7).ToString();
-            var PersonasDirecciones = db.Personas.GroupJoin(db.Direcciones, per => per.Id, dir => dir.Persona_Id, (per, dir) => new { per, dir }).ToList().ToString();
+            //Joins
+            //var personas = db.Personas.ToString();
+            //var direcciones = db.Direcciones.Select(x => new { x.CodigoDireccion, x.Calle }).ToString();
+            //var DireccionPersonas = db.Direcciones.Join(db.Personas, dir => dir.Persona_Id, per => per.Id, (dir, per) => new { dir, per }).FirstOrDefault(x => x.dir.CodigoDireccion == 1).ToString();
+            //var PersonaDirecciones = db.Personas.GroupJoin(db.Direcciones, per => per.Id, dir => dir.Persona_Id, (per, dir) => new { per, dir }).FirstOrDefault(x => x.per.Id == 7).ToString();
+            //var PersonasDirecciones = db.Personas.GroupJoin(db.Direcciones, per => per.Id, dir => dir.Persona_Id, (per, dir) => new { per, dir }).ToList().ToString();
+
+            var PersonasQuery = db.Personas.SqlQuery("SELECT * FROM dbo.Personas").ToList();
+            var DireccionesQuery = db.Database.SqlQuery<Direccion>
+                ("SELECT * FROM dbo.Direccions where CodigoDireccion=@Id", new SqlParameter("@Id", 1)).FirstOrDefault();
 
 
-
+            var PersonasSexo = db.Database.SqlQuery<Estadisticas>(
+                "SELECT Sexo, count (*) as Cantidad FROM dbo.Personas group by Sexo").ToList();
             return View(db.Personas.ToList());
         }
 
@@ -77,17 +90,25 @@ namespace CursoASPNETMVC.Controllers
         // más información vea http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Nombre,Nacimiento,Edad")] Persona persona)
+        public ActionResult Create([Bind(Include = "Id,Nombre,Nacimiento,Edad,Sexo")] Persona persona)
         {
             if (ModelState.IsValid)
             {
-                var personas = new List<Persona>() { new Persona() { Nombre = "Edwin Fabian", Nacimiento = new DateTime(1989, 12, 15), Edad = 29 },
-                    new Persona() { Nombre="Ramon Fabian",Nacimiento = new DateTime (1993,2,4),Edad=26 },
-               new Persona() { Nombre="Frankely Fabian",Nacimiento = new DateTime (1997,11,25),Edad=21 } };
-                personas.Add(persona);
+                // var personas = new List<Persona>() { new Persona() { Nombre = "Edwin Fabian", Nacimiento = new DateTime(1989, 12, 15), Edad = 29 },
+                //     new Persona() { Nombre="Ramon Fabian",Nacimiento = new DateTime (1993,2,4),Edad=26 },
+                //new Persona() { Nombre="Frankely Fabian",Nacimiento = new DateTime (1997,11,25),Edad=21 } };
+                // personas.Add(persona);
+                // db.Personas.AddRange(personas);
+                // db.SaveChanges();
+                // return RedirectToAction("Index"); 
+
+                var personas = new List<Persona>() { persona };
+                personas.Add(new Persona() { Nombre = "Ramon Fabian", Nacimiento = new DateTime(1967, 1 / 5), Edad = 52,Sexo = 1 });
                 db.Personas.AddRange(personas);
                 db.SaveChanges();
-                return RedirectToAction("Index"); 
+                return RedirectToAction("Index");
+
+              
             }
 
             return View(persona);
@@ -113,7 +134,7 @@ namespace CursoASPNETMVC.Controllers
         // más información vea http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Nombre,Nacimiento,Edad")] Persona persona)
+        public ActionResult Edit([Bind(Include = "Id,Nombre,Nacimiento,Edad,Sexo")] Persona persona)
         {
             //if (ModelState.IsValid)
             //{
@@ -122,21 +143,32 @@ namespace CursoASPNETMVC.Controllers
             //    return RedirectToAction("Index");
             //}
             //Metodo 1
+            //var editarPersona1 = db.Personas.FirstOrDefault(x => x.Id == 7);
+            //editarPersona1.Nombre = "Editado Metodo 1";
+            //editarPersona1.Edad = editarPersona1.Edad + 1;
+            //db.SaveChanges();
+
+            ////Metodo 2
+            //var editarPersona2 = new Persona();
+            //editarPersona2.Id = 8;
+            //editarPersona2.Nombre = "Editado Metodo 2";
+            //editarPersona2.Edad = 54;
+            //db.Personas.Attach(editarPersona2);
+            //db.Entry(editarPersona2).Property(x => x.Nombre).IsModified = true;
+            //db.SaveChanges();
+
+            //var editarPersona3 = db.Entry(persona).State = EntityState.Modified;
+            //db.SaveChanges();
+            //return RedirectToAction("Index");
+
             var editarPersona1 = db.Personas.FirstOrDefault(x => x.Id == 7);
-            editarPersona1.Nombre = "Editado Metodo 1";
-            editarPersona1.Edad = editarPersona1.Edad + 1;
+            //editarPersona1.Nombre = "R";
+            editarPersona1.Sexo = 1;
+            //db.Personas.Attach(editarPersona1);
+            //db.Entry(editarPersona1).Property(x => new { x.Nombre, x.Sexo }).IsModified = true;
             db.SaveChanges();
 
-            //Metodo 2
-            var editarPersona2 = new Persona();
-            editarPersona2.Id = 8;
-            editarPersona2.Nombre = "Editado Metodo 2";
-            editarPersona2.Edad = 54;
-            db.Personas.Attach(editarPersona2);
-            db.Entry(editarPersona2).Property(x => x.Nombre).IsModified = true;
-            db.SaveChanges();
-
-            var editarPersona3 = db.Entry(persona).State = EntityState.Modified;
+            var editarPersona2 = db.Entry(persona).State = EntityState.Modified;
             db.SaveChanges();
             return RedirectToAction("Index");
             //return View(persona);

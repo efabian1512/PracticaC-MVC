@@ -219,6 +219,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Recurso.resx</DependentUpon>
     </Compile>
+    <Compile Include="Sexo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
