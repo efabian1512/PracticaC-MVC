@@ -38,8 +38,14 @@ namespace CursoASPNETMVC.Controllers
             //var persona = db.Personas.Include("Direcciones").FirstOrDefault(x => x.Id == 7);
             //var direcciones = persona.Direcciones;
 
-            var direccion = db.Direcciones.Include("Persona").FirstOrDefault(x => x.CodigoDireccion == 1);
-            var nombre = direccion.Persona.Nombre;
+            //var direccion = db.Direcciones.Include("Persona").FirstOrDefault(x => x.CodigoDireccion == 1);
+            //var nombre = direccion.Persona.Nombre;
+            var personas = db.Personas.ToString();
+            var direcciones = db.Direcciones.Select(x => new { x.CodigoDireccion, x.Calle }).ToString();
+            var DireccionPersonas = db.Direcciones.Join(db.Personas, dir => dir.Persona_Id, per => per.Id, (dir, per) => new { dir, per }).FirstOrDefault(x => x.dir.CodigoDireccion == 1).ToString();
+            var PersonaDirecciones = db.Personas.GroupJoin(db.Direcciones, per => per.Id, dir => dir.Persona_Id, (per, dir) => new { per, dir }).FirstOrDefault(x => x.per.Id == 7).ToString();
+            var PersonasDirecciones = db.Personas.GroupJoin(db.Direcciones, per => per.Id, dir => dir.Persona_Id, (per, dir) => new { per, dir }).ToList().ToString();
+
 
 
             return View(db.Personas.ToList());
