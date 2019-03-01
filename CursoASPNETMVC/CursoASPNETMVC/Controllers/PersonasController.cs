@@ -54,14 +54,27 @@ namespace CursoASPNETMVC.Controllers
             //var PersonaDirecciones = db.Personas.GroupJoin(db.Direcciones, per => per.Id, dir => dir.Persona_Id, (per, dir) => new { per, dir }).FirstOrDefault(x => x.per.Id == 7).ToString();
             //var PersonasDirecciones = db.Personas.GroupJoin(db.Direcciones, per => per.Id, dir => dir.Persona_Id, (per, dir) => new { per, dir }).ToList().ToString();
 
-            var PersonasQuery = db.Personas.SqlQuery("SELECT * FROM dbo.Personas").ToList();
-            var DireccionesQuery = db.Database.SqlQuery<Direccion>
-                ("SELECT * FROM dbo.Direccions where CodigoDireccion=@Id", new SqlParameter("@Id", 1)).FirstOrDefault();
+            //var PersonasQuery = db.Personas.SqlQuery("SELECT * FROM dbo.Personas").ToList();
+            //var DireccionesQuery = db.Database.SqlQuery<Direccion>
+            //    ("SELECT * FROM dbo.Direccions where CodigoDireccion=@Id", new SqlParameter("@Id", 1)).FirstOrDefault();
 
 
-            var PersonasSexo = db.Database.SqlQuery<Estadisticas>(
-                "SELECT Sexo, count (*) as Cantidad FROM dbo.Personas group by Sexo").ToList();
+            //var PersonasSexo = db.Database.SqlQuery<Estadisticas>(
+            //    "SELECT Sexo, count (*) as Cantidad FROM dbo.Personas group by Sexo").ToList();
+            var personas = db.Personas.FirstOrDefault();
+
+            //Error: debemos hacer include
+            //var PrimeraDireccion = personas.Direcciones[0];
+            var PersonasInclude = db.Personas.Include(x => x.Direcciones).FirstOrDefault();
+            var PrimeraDireccionInclude = PersonasInclude.Direcciones[5];
+
+            var PersonasConDirecciones = db.Personas.Include("Direcciones").ToList();
+            var DirecciondelaSegunPersona = PersonasConDirecciones[1].Direcciones[1];
+
+            var PersonasConDireccionesConSub = db.Personas.Include(x => x.Direcciones.Select(y => y.SubDireccion)).ToList();
+            var SubCalle = PersonasConDireccionesConSub[0].Direcciones[0].SubDireccion[0].SubCalle;
             return View(db.Personas.ToList());
+
         }
 
         // GET: Personas/Details/5
@@ -102,9 +115,12 @@ namespace CursoASPNETMVC.Controllers
                 // db.SaveChanges();
                 // return RedirectToAction("Index"); 
 
-                var personas = new List<Persona>() { persona };
-                personas.Add(new Persona() { Nombre = "Ramon Fabian", Nacimiento = new DateTime(1967, 1 / 5), Edad = 52,Sexo = 1 });
-                db.Personas.AddRange(personas);
+                //var personas = new List<Persona>() { persona };
+                //personas.Add(new Persona() { Nombre = "Ramon Fabian", Nacimiento = new DateTime(1967, 1 / 5), Edad = 52,Sexo = 1 });
+                //db.Personas.AddRange(personas);
+                //db.SaveChanges();
+                var SubDireccion = new List<SubDireccion>() { new SubDireccion() { SubCalle = "Sira" } };
+                db.SubDirecciones.AddRange(SubDireccion);
                 db.SaveChanges();
                 return RedirectToAction("Index");
 

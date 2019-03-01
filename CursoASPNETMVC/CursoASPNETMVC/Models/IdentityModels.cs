@@ -31,6 +31,7 @@ namespace CursoASPNETMVC.Models
         }
         public DbSet<Direccion> Direcciones { get; set; }
         public DbSet<Persona> Personas { get; set; }
+        public DbSet<SubDireccion> SubDirecciones { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
 
         {
@@ -38,6 +39,9 @@ namespace CursoASPNETMVC.Models
 
             modelBuilder.Properties<int>().Where(p => p.Name.StartsWith("Codigo")).Configure(p => p.IsKey());
             //modelBuilder.Entity<Direccion>().HasRequired(x => x.Persona).WithMany().HasForeignKey(x =>x.Persona_Id);
+            modelBuilder.Entity<Direccion>().HasRequired(x => x.Persona);
+            modelBuilder.Entity<SubDireccion>().HasRequired(x => x.Direccion);
+
 
             base.OnModelCreating(modelBuilder); 
         }
