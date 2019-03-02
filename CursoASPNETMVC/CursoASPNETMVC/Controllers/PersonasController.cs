@@ -112,15 +112,33 @@ namespace CursoASPNETMVC.Controllers
             //var SubCalle1 = PersonasConDireccionesConSub[2].Direcciones[0].SubDireccion[0].SubCalle;
             ////var SubCalle1 = PersonasConDireccionesConSub[1].Direcciones[1].SubDireccion[1].SubCalle;
 
-            var persona = db.Personas.FirstOrDefault();
-            var persona1Direccion = persona.Direcciones[0];
+            //var persona = db.Personas.FirstOrDefault();
+            //var persona1Direccion = persona.Direcciones[0];
 
-            var personas = db.Personas.ToList();
-            var persona2Direccion = personas[1].Direcciones[0];
+            //var personas = db.Personas.ToList();
+            //var persona2Direccion = personas[1].Direcciones[0];
 
-            var persona2Subcalle = personas[1].Direcciones[0].SubDireccion[0].SubCalle;
+            //var persona2Subcalle = personas[1].Direcciones[0].SubDireccion[0].SubCalle;
 
-            var PersonaJson = Newtonsoft.Json.JsonConvert.SerializeObject(persona);
+            //var PersonaJson = Newtonsoft.Json.JsonConvert.SerializeObject(persona);
+
+            var inicioLazyLoading = DateTime.Now;
+            var personasLazy = db.Personas.ToList();
+
+            foreach(var persona in personasLazy)
+            {
+                var calle = persona.Direcciones[0];
+
+            }
+            var finLazyLoading = DateTime.Now;
+
+            var inicioEagerLoading = DateTime.Now;
+            var personas = db.Personas.Include(x => x.Direcciones).ToList();
+            foreach( var persona in personas)
+            {
+                var Calle = persona.Direcciones[0];
+            }
+            var finEagerLoading = DateTime.Now;
 
             return View(db.Personas.ToList());
 
