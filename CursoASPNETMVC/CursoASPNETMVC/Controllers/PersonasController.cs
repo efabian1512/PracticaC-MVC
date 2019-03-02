@@ -108,6 +108,11 @@ namespace CursoASPNETMVC.Controllers
 
             var PersonasConDireccionesConSub = db.Personas.Include(x => x.Direcciones.Select(y => y.SubDireccion)).ToList();
             var SubCalle = PersonasConDireccionesConSub[0].Direcciones[0].SubDireccion[0].SubCalle;
+            //var PersonasConDireccionesConSub1 = db.Personas.Include(x => x.Direcciones.Select(y => y.SubDireccion)).ToList();
+            var SubCalle1 = PersonasConDireccionesConSub[2].Direcciones[0].SubDireccion[0].SubCalle;
+            //var SubCalle1 = PersonasConDireccionesConSub[1].Direcciones[1].SubDireccion[1].SubCalle;
+
+
             return View(db.Personas.ToList());
 
         }
