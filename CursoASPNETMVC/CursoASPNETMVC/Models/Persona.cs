@@ -58,9 +58,10 @@ namespace CursoASPNETMVC.Models
         public string Nombre { get; set; }
         public DateTime Nacimiento { get; set; }
         public int Edad { get; set; }
-       // public virtual List<Direccion> Direcciones { get; set; }
-       public int Sexo { get; set; }
-       public List<Direccion> Direcciones { get; set; }
+        public int Sexo { get; set; }
+        public virtual List<Direccion> Direcciones { get; set; }
+
+       // public List<Direccion> Direcciones { get; set; }
     }
 
 

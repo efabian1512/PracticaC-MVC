@@ -96,22 +96,31 @@ namespace CursoASPNETMVC.Controllers
             //var direcciones = new List<Direccion>() { new Direccion() { Calle = "Carlos Pumarol 23" },new Direccion { Calle ="Duarte 27"} };
             //db.Direcciones.AddRange(direcciones);
             //db.SaveChanges();
-            var personas = db.Personas.FirstOrDefault();
+            //var personas = db.Personas.FirstOrDefault();
 
-            //Error: debemos hacer include
-            var PrimeraDireccion = personas.Direcciones[0];
-            var PersonasInclude = db.Personas.Include(x => x.Direcciones).FirstOrDefault();
-            var PrimeraDireccionInclude = PersonasInclude.Direcciones[0];
+            ////Error: debemos hacer include
+            //var PrimeraDireccion = personas.Direcciones[0];
+            //var PersonasInclude = db.Personas.Include(x => x.Direcciones).FirstOrDefault();
+            //var PrimeraDireccionInclude = PersonasInclude.Direcciones[0];
 
-            var PersonasConDirecciones = db.Personas.Include("Direcciones").ToList();
-            var DirecciondelaSegunPersona = PersonasConDirecciones[1].Direcciones[1];
+            //var PersonasConDirecciones = db.Personas.Include("Direcciones").ToList();
+            //var DirecciondelaSegunPersona = PersonasConDirecciones[1].Direcciones[1];
 
-            var PersonasConDireccionesConSub = db.Personas.Include(x => x.Direcciones.Select(y => y.SubDireccion)).ToList();
-            var SubCalle = PersonasConDireccionesConSub[0].Direcciones[0].SubDireccion[0].SubCalle;
-            //var PersonasConDireccionesConSub1 = db.Personas.Include(x => x.Direcciones.Select(y => y.SubDireccion)).ToList();
-            var SubCalle1 = PersonasConDireccionesConSub[2].Direcciones[0].SubDireccion[0].SubCalle;
-            //var SubCalle1 = PersonasConDireccionesConSub[1].Direcciones[1].SubDireccion[1].SubCalle;
+            //var PersonasConDireccionesConSub = db.Personas.Include(x => x.Direcciones.Select(y => y.SubDireccion)).ToList();
+            //var SubCalle = PersonasConDireccionesConSub[0].Direcciones[0].SubDireccion[0].SubCalle;
+            ////var PersonasConDireccionesConSub1 = db.Personas.Include(x => x.Direcciones.Select(y => y.SubDireccion)).ToList();
+            //var SubCalle1 = PersonasConDireccionesConSub[2].Direcciones[0].SubDireccion[0].SubCalle;
+            ////var SubCalle1 = PersonasConDireccionesConSub[1].Direcciones[1].SubDireccion[1].SubCalle;
 
+            var persona = db.Personas.FirstOrDefault();
+            var persona1Direccion = persona.Direcciones[0];
+
+            var personas = db.Personas.ToList();
+            var persona2Direccion = personas[1].Direcciones[0];
+
+            var persona2Subcalle = personas[1].Direcciones[0].SubDireccion[0].SubCalle;
+
+            var PersonaJson = Newtonsoft.Json.JsonConvert.SerializeObject(persona);
 
             return View(db.Personas.ToList());
 
