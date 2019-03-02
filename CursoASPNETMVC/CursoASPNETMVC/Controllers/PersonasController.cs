@@ -61,12 +61,47 @@ namespace CursoASPNETMVC.Controllers
 
             //var PersonasSexo = db.Database.SqlQuery<Estadisticas>(
             //    "SELECT Sexo, count (*) as Cantidad FROM dbo.Personas group by Sexo").ToList();
+            //var primeraPersona = new Persona() { Nombre = "Edin", Nacimiento = new DateTime(1989, 12, 15), Edad = 29, Sexo = 1 };
+            //db.Personas.Add(primeraPersona);
+            //var segundaPersona = new Persona() { Nombre = "Omar", Nacimiento = new DateTime(1993, 2, 4), Edad = 26, Sexo = 1 };
+            //db.Personas.Add(segundaPersona);
+            //var terceraPersona = new Persona() { Nombre = "Rossi", Nacimiento = new DateTime(1990, 6, 10), Edad = 28, Sexo = 2 };
+            //db.Personas.Add(terceraPersona);
+            //var persona = new Persona();
+            //persona.Id = 1;
+            //db.Personas.Attach(persona);
+            //var direccionPersona1 = new Direccion() { Calle = "Respaldo San Antonio 22", Persona = persona };
+            //db.Direcciones.Add(direccionPersona1);
+            //var persona2 = db.Personas.FirstOrDefault(x => x.Id == 2);
+            //var direccionPersona2 = new Direccion() { Calle = "San Antonio 27", Persona = persona2 };
+            //db.Direcciones.Add(direccionPersona2);
+            ////var personados = db.Personas.FirstOrDefault(x => x.Id == 2);
+            //var direccion2Persona2 = new Direccion() { Calle = "San Jose 29", Persona = persona2 };
+            //db.Direcciones.Add(direccion2Persona2);
+            //var persona3 = db.Personas.FirstOrDefault(x => x.Id == 3);
+            //var direccionPersona3 = new Direccion() { Calle = "Duarte 30", Persona = persona3 };
+            //db.Direcciones.Add(direccionPersona3);
+            //db.SaveChanges();
+            //var direccion1 = db.Direcciones.FirstOrDefault(x => x.CodigoDireccion == 1);
+            //var direccion2 = db.Direcciones.FirstOrDefault(x => x.CodigoDireccion == 2);
+            //var direccion4 = db.Direcciones.FirstOrDefault(x => x.CodigoDireccion == 7);
+
+            //var SubDireccion = new List<SubDireccion>() { new SubDireccion() { SubCalle = "Sira",Direccion=direccion1 } ,
+            //        new SubDireccion() { SubCalle="Pollera", Direccion = direccion2},
+            //    new SubDireccion() { SubCalle="Pollera 3", Direccion = direccion2},
+            //    new SubDireccion() { SubCalle="Ejemplo 4", Direccion = direccion4}};
+            //db.SubDirecciones.AddRange(SubDireccion);
+            ////db.SubDirecciones.AddRange(SubDireccion);
+            //db.SaveChanges();
+            //var direcciones = new List<Direccion>() { new Direccion() { Calle = "Carlos Pumarol 23" },new Direccion { Calle ="Duarte 27"} };
+            //db.Direcciones.AddRange(direcciones);
+            //db.SaveChanges();
             var personas = db.Personas.FirstOrDefault();
 
             //Error: debemos hacer include
-            //var PrimeraDireccion = personas.Direcciones[0];
+            var PrimeraDireccion = personas.Direcciones[0];
             var PersonasInclude = db.Personas.Include(x => x.Direcciones).FirstOrDefault();
-            var PrimeraDireccionInclude = PersonasInclude.Direcciones[5];
+            var PrimeraDireccionInclude = PersonasInclude.Direcciones[0];
 
             var PersonasConDirecciones = db.Personas.Include("Direcciones").ToList();
             var DirecciondelaSegunPersona = PersonasConDirecciones[1].Direcciones[1];
@@ -119,9 +154,7 @@ namespace CursoASPNETMVC.Controllers
                 //personas.Add(new Persona() { Nombre = "Ramon Fabian", Nacimiento = new DateTime(1967, 1 / 5), Edad = 52,Sexo = 1 });
                 //db.Personas.AddRange(personas);
                 //db.SaveChanges();
-                var SubDireccion = new List<SubDireccion>() { new SubDireccion() { SubCalle = "Sira" } };
-                db.SubDirecciones.AddRange(SubDireccion);
-                db.SaveChanges();
+               
                 return RedirectToAction("Index");
 
               
