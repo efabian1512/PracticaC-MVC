@@ -202,9 +202,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201902241725058_Prueba.cs" />
-    <Compile Include="Migrations\201902241725058_Prueba.Designer.cs">
-      <DependentUpon>201902241725058_Prueba.cs</DependentUpon>
+    <Compile Include="Migrations\201903022320247_MigracionInicial.cs" />
+    <Compile Include="Migrations\201903022320247_MigracionInicial.Designer.cs">
+      <DependentUpon>201903022320247_MigracionInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903022330059_SegundaMigracion.cs" />
+    <Compile Include="Migrations\201903022330059_SegundaMigracion.Designer.cs">
+      <DependentUpon>201903022330059_SegundaMigracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903022354131_TerceraMigracion.cs" />
+    <Compile Include="Migrations\201903022354131_TerceraMigracion.Designer.cs">
+      <DependentUpon>201903022354131_TerceraMigracion.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -300,8 +308,14 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201902241725058_Prueba.resx">
-      <DependentUpon>201902241725058_Prueba.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201903022320247_MigracionInicial.resx">
+      <DependentUpon>201903022320247_MigracionInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903022330059_SegundaMigracion.resx">
+      <DependentUpon>201903022330059_SegundaMigracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903022354131_TerceraMigracion.resx">
+      <DependentUpon>201903022354131_TerceraMigracion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Recursos\Recurso.en-US.resx" />
     <EmbeddedResource Include="Recursos\Recurso.resx">

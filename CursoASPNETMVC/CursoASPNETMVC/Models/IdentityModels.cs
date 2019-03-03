@@ -41,7 +41,9 @@ namespace CursoASPNETMVC.Models
             //modelBuilder.Entity<Direccion>().HasRequired(x => x.Persona).WithMany().HasForeignKey(x =>x.Persona_Id);
             modelBuilder.Entity<Direccion>().HasRequired(x => x.Persona);
             modelBuilder.Entity<SubDireccion>().HasRequired(x => x.Direccion);
-
+            modelBuilder.Entity<Direccion>().Property(x => x.Calle).HasMaxLength(300).IsRequired();
+            
+            
 
             base.OnModelCreating(modelBuilder); 
         }

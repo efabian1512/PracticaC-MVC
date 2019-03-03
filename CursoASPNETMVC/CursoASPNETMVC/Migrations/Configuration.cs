@@ -9,7 +9,7 @@ namespace CursoASPNETMVC.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationsEnabled = false;
             
         }
 

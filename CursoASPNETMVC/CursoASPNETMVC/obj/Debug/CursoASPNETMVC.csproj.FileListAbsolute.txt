@@ -167,7 +167,6 @@ C:\Git\Practica C#\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC\bin\Microsoft.Owi
 C:\Git\Practica C#\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Git\Practica C#\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Git\Practica C#\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC\obj\Debug\CursoASPNETMVC.csprojResolveAssemblyReference.cache
-C:\Git\Practica C#\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC\obj\Debug\CursoASPNETMVC.Migrations.Prueba.resources
 C:\Git\Practica C#\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC\obj\Debug\CursoASPNETMVC.Recursos.Recurso.resources
 C:\Git\Practica C#\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC\obj\Debug\CursoASPNETMVC.Recursos.Recurso.en-US.resources
 C:\Git\Practica C#\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC\obj\Debug\CursoASPNETMVC.csproj.GenerateResource.Cache
@@ -262,3 +261,6 @@ D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC\obj
 D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC\obj\Debug\en-US\CursoASPNETMVC.resources.dll
 D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC\obj\Debug\CursoASPNETMVC.dll
 D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC\obj\Debug\CursoASPNETMVC.pdb
+C:\Git\Practica C#\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC\obj\Debug\CursoASPNETMVC.Migrations.MigracionInicial.resources
+C:\Git\Practica C#\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC\obj\Debug\CursoASPNETMVC.Migrations.SegundaMigracion.resources
+C:\Git\Practica C#\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC\obj\Debug\CursoASPNETMVC.Migrations.TerceraMigracion.resources

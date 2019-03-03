@@ -11,9 +11,9 @@ namespace CursoASPNETMVC.Models
         public int CodigoDireccion { get; set; }
         public string Calle { get; set; }
         //public int Persona_Id { get; set; }
-        public virtual Persona Persona { get; set; }
+        public Persona Persona { get; set; }
 
-        public virtual List<SubDireccion> SubDireccion { get; set; }
+        public List<SubDireccion> SubDireccion { get; set; }
     }
 
     public class SubDireccion

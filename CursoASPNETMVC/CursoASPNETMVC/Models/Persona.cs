@@ -55,13 +55,20 @@ namespace CursoASPNETMVC.Models
     public class Persona
     {
         public int Id { get; set; }
+        [StringLength(120)]
+        [Index]
         public string Nombre { get; set; }
+        [Index("IX_Nacimiento_Edad",Order =1)]
         public DateTime Nacimiento { get; set; }
+        [Index("IX_Nacimiento_Edad", Order = 2)]
         public int Edad { get; set; }
         public int Sexo { get; set; }
-        public virtual List<Direccion> Direcciones { get; set; }
+        //[NotMapped]
+        //[ScaffoldColumn(false)]
+        // public string camposecreto { get; set; }
+        // public virtual List<Direccion> Direcciones { get; set; }
 
-       // public List<Direccion> Direcciones { get; set; }
+        public List<Direccion> Direcciones { get; set; }
     }
 
 
