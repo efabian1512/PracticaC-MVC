@@ -1,0 +1,1 @@
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC2\obj\Debug\CursoASPNETMVC2.csprojResolveAssemblyReference.cache

@@ -1,0 +1,48 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
+using System.Linq;
+using System.Web;
+
+namespace CursoASPNETMVC3.Models
+{
+    public class ApplicationDbContext : DbContext
+    {
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            //Decimos cual columna es llave primaria (Personas)
+            modelBuilder.Entity<Persona>().HasKey(x => x.Cedula);
+            //Definimos una llave compuesta (Direcciones)
+            modelBuilder.Entity<Direccion>().HasKey(x => new { x.CodigoDireccion, x.Calle });
+            //El valor de la llave primaria sera asignado por nosotros (Direcciones)
+            modelBuilder.Entity<Direccion>().Property(x => x.CodigoDireccion).
+            HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);
+            //El campo cedula de la tabla Persona es de longitud fija y tiene longitud maxima de 11
+            modelBuilder.Entity<Persona>().Property(x => x.Cedula).IsFixedLength().HasMaxLength(11);
+            //Todas las propiedad enteras que empiecen con Codigo son llaves primarias. Ej: CodigoDireccion
+            modelBuilder.Properties<int>().Where(x => x.Name.StartsWith("Codigo")).Configure(x => x.IsKey());
+            //La longitud maxima del campo Nombre sera de 120 caracteres
+            modelBuilder.Entity<Persona>().Property(x => x.Nombre).HasMaxLength(120);
+            //La propiedad Nombre sera requerida
+            modelBuilder.Entity<Persona>().Property(x => x.Nombre).IsRequired();
+            // Esta propiedad no se mapeara en una columna (Resumen)
+            modelBuilder.Entity<Persona>().Ignore(x => x.Resumen);
+            //Definimos el nombre que tendra la columna (CodigoDireccion)
+            modelBuilder.Entity<Direccion>().Property(x => x.CodigoDireccion).HasColumnName("Codigo");
+            //Definimos el nombre que tendra la tabla (Direcciones)
+            modelBuilder.Entity<Direccion>().ToTable("Direcciones");
+
+            //Convenciones
+
+            //No pluralizar
+            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+            // No mapea los decimales a numeric(18,2)
+            modelBuilder.Conventions.Remove<DecimalPropertyConvention>();
+            //Los decimales seran decimal(16,2)
+            modelBuilder.Properties<decimal>().Configure(x => x.HasColumnType("decimal").HasPrecision(16, 2));
+            base.OnModelCreating(modelBuilder);
+        }
+    }
+}
