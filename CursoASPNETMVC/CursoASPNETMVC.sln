@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoASPNETMVC", "CursoASPN
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoASPNETMVC3", "CursoASPNETMVC3\CursoASPNETMVC3.csproj", "{7C95EFFA-746B-4B03-9747-B4C2B5449516}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoASPNETMVC2", "CursoASPNETMVC2\CursoASPNETMVC2.csproj", "{1E135BBF-5CE4-44E5-92B3-60E1840AFF69}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7C95EFFA-746B-4B03-9747-B4C2B5449516}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C95EFFA-746B-4B03-9747-B4C2B5449516}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C95EFFA-746B-4B03-9747-B4C2B5449516}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E135BBF-5CE4-44E5-92B3-60E1840AFF69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E135BBF-5CE4-44E5-92B3-60E1840AFF69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E135BBF-5CE4-44E5-92B3-60E1840AFF69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E135BBF-5CE4-44E5-92B3-60E1840AFF69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
