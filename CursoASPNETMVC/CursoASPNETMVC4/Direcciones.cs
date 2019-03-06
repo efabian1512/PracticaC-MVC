@@ -9,12 +9,17 @@ namespace CursoASPNETMVC4
     public partial class Direcciones
     {
         [Key]
-        public int CodigoDireccion { get; set; }
+        [Column(Order = 0)]
+        public int Id { get; set; }
 
+        [Key]
+        [Column(Order = 1)]
         [StringLength(200)]
         public string Calle { get; set; }
 
         [StringLength(11)]
         public string Cedula { get; set; }
+
+        public Personas Personas { get; set; }
     }
 }
