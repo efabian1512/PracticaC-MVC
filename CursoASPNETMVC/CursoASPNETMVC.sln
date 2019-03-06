@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoASPNETMVC3", "CursoASP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoASPNETMVC2", "CursoASPNETMVC2\CursoASPNETMVC2.csproj", "{1E135BBF-5CE4-44E5-92B3-60E1840AFF69}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoASPNETMVC4", "CursoASPNETMVC4\CursoASPNETMVC4.csproj", "{5040BD6A-06C0-4DD0-A7C4-12CE0352E965}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{1E135BBF-5CE4-44E5-92B3-60E1840AFF69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E135BBF-5CE4-44E5-92B3-60E1840AFF69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E135BBF-5CE4-44E5-92B3-60E1840AFF69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5040BD6A-06C0-4DD0-A7C4-12CE0352E965}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5040BD6A-06C0-4DD0-A7C4-12CE0352E965}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5040BD6A-06C0-4DD0-A7C4-12CE0352E965}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5040BD6A-06C0-4DD0-A7C4-12CE0352E965}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
