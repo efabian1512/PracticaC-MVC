@@ -64,3 +64,5 @@ D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC4\ob
 D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC4\obj\Debug\CursoASPNETMVC4.pdb
 D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC4\obj\Debug\CursoASPNETMVC4.Migrations.DatabaseFirst.resources
 D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC4\obj\Debug\CursoASPNETMVC4.csproj.GenerateResource.Cache
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC4\obj\Debug\CursoASPNETMVC4.Migrations.Creando_SP.resources
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC4\obj\Debug\CursoASPNETMVC4.RecursosSQL.resources
