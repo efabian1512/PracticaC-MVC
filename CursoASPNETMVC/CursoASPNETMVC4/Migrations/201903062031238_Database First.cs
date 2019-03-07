@@ -7,8 +7,9 @@ namespace CursoASPNETMVC4.Migrations
     {
         public override void Up()
         {
-            DropTable("dbo.Direcciones");
+            
             DropTable("dbo.Personas");
+            DropTable("dbo.Direcciones");
 
             CreateTable(
                 "dbo.Direcciones",

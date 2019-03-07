@@ -155,7 +155,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApplicationDbContext1.cs" />
+    <Compile Include="ApplicationDbContext.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -168,9 +168,18 @@
     <Compile Include="Migrations\201903062031238_Database First.Designer.cs">
       <DependentUpon>201903062031238_Database First.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903070335408_Creando_SP.cs" />
+    <Compile Include="Migrations\201903070335408_Creando_SP.Designer.cs">
+      <DependentUpon>201903070335408_Creando_SP.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Personas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecursosSQL.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RecursosSQL.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -179,6 +188,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Migrations\Queries\Borrrar_sp_Borra_Personas_Menores.sql" />
+    <Content Include="Migrations\Queries\Crear_sp_Borra_Personas_Menores.sql" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -228,6 +239,13 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201903062031238_Database First.resx">
       <DependentUpon>201903062031238_Database First.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903070335408_Creando_SP.resx">
+      <DependentUpon>201903070335408_Creando_SP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecursosSQL.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RecursosSQL.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

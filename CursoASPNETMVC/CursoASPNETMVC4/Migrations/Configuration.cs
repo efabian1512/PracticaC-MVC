@@ -5,14 +5,14 @@ namespace CursoASPNETMVC4.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<CursoASPNETMVC4.ApplicationDbContext1>
+    internal sealed class Configuration : DbMigrationsConfiguration<CursoASPNETMVC4.ApplicationDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(CursoASPNETMVC4.ApplicationDbContext1 context)
+        protected override void Seed(CursoASPNETMVC4.ApplicationDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 
