@@ -64,6 +64,7 @@ D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC4\ob
 D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC4\obj\Debug\CursoASPNETMVC4.pdb
 D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC4\obj\Debug\CursoASPNETMVC4.Migrations.DatabaseFirst.resources
 D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC4\obj\Debug\CursoASPNETMVC4.csproj.GenerateResource.Cache
+<<<<<<< HEAD
 C:\Git\Practica C#\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC4\bin\ApplicationInsights.config
 C:\Git\Practica C#\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC4\bin\roslyn\csc.exe
 C:\Git\Practica C#\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC4\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -132,3 +133,7 @@ C:\Git\Practica C#\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC4\obj\Debug\CursoA
 C:\Git\Practica C#\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC4\obj\Debug\CursoASPNETMVC4.pdb
 C:\Git\Practica C#\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC4\obj\Debug\CursoASPNETMVC4.Migrations.Creando_SP.resources
 C:\Git\Practica C#\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC4\obj\Debug\CursoASPNETMVC4.RecursosSQL.resources
+=======
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC4\obj\Debug\CursoASPNETMVC4.Migrations.Creando_SP.resources
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\CursoASPNETMVC\CursoASPNETMVC4\obj\Debug\CursoASPNETMVC4.RecursosSQL.resources
+>>>>>>> ed4616c1bf0b3b00814ebf78486dcc57a83716c0

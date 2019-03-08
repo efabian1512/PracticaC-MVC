@@ -168,9 +168,15 @@
     <Compile Include="Migrations\201903062031238_Database First.Designer.cs">
       <DependentUpon>201903062031238_Database First.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Migrations\201903070335408_Creando_SP.cs" />
     <Compile Include="Migrations\201903070335408_Creando_SP.Designer.cs">
       <DependentUpon>201903070335408_Creando_SP.cs</DependentUpon>
+=======
+    <Compile Include="Migrations\201903071255535_Creando_SP.cs" />
+    <Compile Include="Migrations\201903071255535_Creando_SP.Designer.cs">
+      <DependentUpon>201903071255535_Creando_SP.cs</DependentUpon>
+>>>>>>> ed4616c1bf0b3b00814ebf78486dcc57a83716c0
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Personas.cs" />
@@ -188,8 +194,13 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+<<<<<<< HEAD
     <Content Include="Migrations\Queries\Borrrar_sp_Borra_Personas_Menores.sql" />
     <Content Include="Migrations\Queries\Crear_sp_Borra_Personas_Menores.sql" />
+=======
+    <Content Include="Migrations\Queries\Borrar_sp_Borrar_Personas_Menores.sql" />
+    <Content Include="Migrations\Queries\Crear_sp_Borrar_Personas_Menores.sql" />
+>>>>>>> ed4616c1bf0b3b00814ebf78486dcc57a83716c0
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -240,8 +251,13 @@
     <EmbeddedResource Include="Migrations\201903062031238_Database First.resx">
       <DependentUpon>201903062031238_Database First.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Migrations\201903070335408_Creando_SP.resx">
       <DependentUpon>201903070335408_Creando_SP.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="Migrations\201903071255535_Creando_SP.resx">
+      <DependentUpon>201903071255535_Creando_SP.cs</DependentUpon>
+>>>>>>> ed4616c1bf0b3b00814ebf78486dcc57a83716c0
     </EmbeddedResource>
     <EmbeddedResource Include="RecursosSQL.resx">
       <Generator>ResXFileCodeGenerator</Generator>
