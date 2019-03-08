@@ -1,1 +1,0 @@
-drop procedure sp_Borra_Personas_menores;
