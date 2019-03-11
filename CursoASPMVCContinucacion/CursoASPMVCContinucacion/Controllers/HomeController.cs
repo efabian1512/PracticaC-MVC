@@ -4,17 +4,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Routing;
 
 namespace CursoASPMVCContinucacion.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index(int pagina =1)
+        public ActionResult Index(int? edad,int pagina =1)
 
         {
+
             var cantidadRegistrosPorPagina = 2; //parametro
             using(var db = new ApplicationDbContext())
             {
+                Func<Persona, bool> predicado = x => !edad.HasValue || edad.Value == x.Edad;
                 var personas = db.Personas.OrderBy(x => x.Id)
                     .Skip((pagina - 1) * cantidadRegistrosPorPagina)
                     .Take(cantidadRegistrosPorPagina).ToList();
@@ -25,6 +28,8 @@ namespace CursoASPMVCContinucacion.Controllers
                 modelo.PaginaActual = pagina;
                 modelo.TotalDeRegistros = totalDeRegistros;
                 modelo.RegistrosPorPagina = cantidadRegistrosPorPagina;
+                modelo.ValoresQueryString = new RouteValueDictionary();
+                modelo.ValoresQueryString["edad"] = edad;
                 return View(modelo);
             }
             
