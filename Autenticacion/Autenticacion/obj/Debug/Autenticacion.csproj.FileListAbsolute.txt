@@ -1,0 +1,202 @@
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\ApplicationInsights.config
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\roslyn\csc.exe
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\roslyn\System.Collections.Immutable.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\roslyn\vbc.exe
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\roslyn\VBCSCompiler.exe
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\roslyn\VBCSCompiler.exe.config
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Autenticacion.dll.config
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Autenticacion.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Autenticacion.pdb
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Antlr3.Runtime.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\EntityFramework.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\EntityFramework.SqlServer.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.AI.Web.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.AI.WindowsServer.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.ApplicationInsights.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.Owin.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.Owin.Security.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.Owin.Security.Google.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.Web.Infrastructure.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Newtonsoft.Json.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Owin.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\System.Web.Helpers.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\System.Web.Mvc.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\System.Web.Optimization.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\System.Web.Razor.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\System.Web.WebPages.Deployment.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\System.Web.WebPages.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\System.Web.WebPages.Razor.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\WebGrease.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.AI.Web.xml
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.AI.WindowsServer.xml
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.ApplicationInsights.xml
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\System.Web.Helpers.xml
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\System.Web.Mvc.xml
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\System.Web.Optimization.xml
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\System.Web.Razor.xml
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\System.Web.WebPages.xml
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\System.Web.WebPages.Deployment.xml
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\System.Web.WebPages.Razor.xml
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Antlr3.Runtime.pdb
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Newtonsoft.Json.xml
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\EntityFramework.xml
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\EntityFramework.SqlServer.xml
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.Owin.xml
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.Owin.Security.xml
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.Owin.Security.Google.xml
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\es\System.Web.Helpers.resources.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\es\System.Web.Mvc.resources.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\es\System.Web.Optimization.resources.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\es\System.Web.Razor.resources.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\es\System.Web.WebPages.resources.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\es\System.Web.WebPages.Deployment.resources.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\es\System.Web.WebPages.Razor.resources.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\es\EntityFramework.resources.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\es\EntityFramework.SqlServer.resources.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\es\Microsoft.Owin.resources.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\es\Microsoft.Owin.Security.resources.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\es\Microsoft.Owin.Security.Google.resources.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\obj\Debug\Autenticacion.csprojResolveAssemblyReference.cache
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\obj\Debug\Autenticacion.dll
+c:\users\efabian\documents\visual studio 2015\Projects\Autenticacion\Autenticacion\obj\Debug\Autenticacion.pdb
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\ApplicationInsights.config
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\roslyn\csc.exe
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\roslyn\System.Collections.Immutable.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\roslyn\System.Reflection.Metadata.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\roslyn\vbc.exe
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\roslyn\VBCSCompiler.exe
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\roslyn\VBCSCompiler.exe.config
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Autenticacion.dll.config
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Autenticacion.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Autenticacion.pdb
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Antlr3.Runtime.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\EntityFramework.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\EntityFramework.SqlServer.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.AI.DependencyCollector.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.AI.Web.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.AI.WindowsServer.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.ApplicationInsights.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.Owin.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.Owin.Security.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.Owin.Security.Google.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.Web.Infrastructure.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Newtonsoft.Json.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Owin.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\System.Web.Helpers.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\System.Web.Mvc.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\System.Web.Optimization.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\System.Web.Razor.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\System.Web.WebPages.Deployment.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\System.Web.WebPages.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\System.Web.WebPages.Razor.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\WebGrease.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.AI.DependencyCollector.xml
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.AI.Web.xml
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.AI.WindowsServer.xml
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.ApplicationInsights.xml
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\System.Web.Helpers.xml
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\System.Web.Mvc.xml
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\System.Web.Optimization.xml
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\System.Web.Razor.xml
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\System.Web.WebPages.xml
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\System.Web.WebPages.Deployment.xml
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\System.Web.WebPages.Razor.xml
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Antlr3.Runtime.pdb
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Newtonsoft.Json.xml
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\EntityFramework.xml
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\EntityFramework.SqlServer.xml
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.Owin.xml
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.Owin.Security.xml
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.Owin.Security.Google.xml
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\es\System.Web.Helpers.resources.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\es\System.Web.Mvc.resources.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\es\System.Web.Optimization.resources.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\es\System.Web.Razor.resources.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\es\System.Web.WebPages.resources.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\es\EntityFramework.resources.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\es\EntityFramework.SqlServer.resources.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\es\Microsoft.Owin.resources.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\es\Microsoft.Owin.Security.resources.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\es\Microsoft.Owin.Security.Google.resources.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\obj\Debug\Autenticacion.csprojResolveAssemblyReference.cache
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\obj\Debug\Autenticacion.dll
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\obj\Debug\Autenticacion.pdb
