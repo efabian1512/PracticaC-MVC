@@ -200,3 +200,6 @@ D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\bin\e
 D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\obj\Debug\Autenticacion.csprojResolveAssemblyReference.cache
 D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\obj\Debug\Autenticacion.dll
 D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\obj\Debug\Autenticacion.pdb
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\obj\Debug\Autenticacion.Migrations.InitialCreate.resources
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\obj\Debug\Autenticacion.csproj.GenerateResource.Cache
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Autenticacion\Autenticacion\obj\Debug\Autenticacion.Migrations.AdicionColumna.resources
