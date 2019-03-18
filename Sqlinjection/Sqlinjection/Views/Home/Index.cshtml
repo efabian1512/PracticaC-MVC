@@ -1,0 +1,44 @@
+﻿@model List<Sqlinjection.Models.Persona>
+@using (Html.BeginForm("Index", null, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{ 
+@Html.AntiForgeryToken()
+<label for="Nombre">Nombre:</label> <input type="text" id="Nombre" name="Nombre"/>
+
+<input type="submit" value="Filtrar" class="btn btn-success"/>
+}
+
+
+<h4> Resultados</h4>
+<table class="table table-striped">
+
+    <thead>
+        <tr>
+           <th>Nombre</th>
+           <th>Direccion</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var persona in Model)
+        {
+            <tr>
+                <td>@persona.Nombre</td>
+                <td>@persona.Direccion</td>
+            </tr>
+           
+
+        }
+
+
+        
+    </tbody>
+</table>
+
+
+
+
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
