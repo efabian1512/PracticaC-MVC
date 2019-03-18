@@ -5,6 +5,9 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Helpers;
 using System.Configuration;
+using Microsoft.AspNet.Identity;
+using Hash_y_Sal.Models;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace Hash_y_Sal.Controllers
 {
@@ -23,6 +26,17 @@ namespace Hash_y_Sal.Controllers
 
             var dato1 = ConfigurationManager.AppSettings["Dato1"];
             var dato2 = ConfigurationManager.AppSettings["Dato2"];
+
+            if (User.Identity.IsAuthenticated)
+            {
+                var Id = User.Identity.GetUserId();
+                using(ApplicationDbContext db = new ApplicationDbContext())
+                {
+                    var userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(db));
+                    var usuario =userManager.FindById(Id);
+                   var nombredeusuario = usuario.UserName;
+                }
+            }
 
 
             return View();
