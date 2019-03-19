@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<h2>XSS</h2>
+@using (Html.BeginForm(null, null, FormMethod.Get))
+{
+   
+    <input type="text" name="nombre" id="nombre" value="@ViewBag.Nombre" style="width:100%; max-width:none;" 
+           autocomplete="off"/>
+}
+
+    <h5> Sin Raw: @ViewBag.Nombre</h5>
+    <h5>Con Raw: @Html.Raw(ViewBag.Nombre)</h5>
