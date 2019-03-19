@@ -98,3 +98,5 @@ D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\XSS\XSS\bin\es\Microsoft.Owin.Sec
 D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\XSS\XSS\obj\Debug\XSS.csprojResolveAssemblyReference.cache
 D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\XSS\XSS\obj\Debug\XSS.dll
 D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\XSS\XSS\obj\Debug\XSS.pdb
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\XSS\XSS\obj\Debug\XSS.Migrations.NuevasColumnasTablaUsers.resources
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\XSS\XSS\obj\Debug\XSS.csproj.GenerateResource.Cache

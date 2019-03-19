@@ -151,7 +151,7 @@ namespace XSS.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser { UserName = model.Email, Email = model.Email,NumeroDeCuenta = model.NumeroDeCuenta,MontoDisponible = model.MontoDisponible };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {

@@ -79,6 +79,10 @@ namespace XSS.Models
         [Display(Name = "Confirmar contraseña")]
         [Compare("Password", ErrorMessage = "La contraseña y la contraseña de confirmación no coinciden.")]
         public string ConfirmPassword { get; set; }
+        [Required]
+        [StringLength(9)]
+        public string NumeroDeCuenta { get; set; }
+        public string MontoDisponible { get; set; }
     }
 
     public class ResetPasswordViewModel

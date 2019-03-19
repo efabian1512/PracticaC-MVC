@@ -1,0 +1,11 @@
+﻿@model XSS.Models.RegisterViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+@Html.ActionLink(@Model.NumeroDeCuenta,"InformacionDelaCuenta","ReferenciaDirecta",new { Cuenta=Model.NumeroDeCuenta})
+
+<h2>Index</h2>
+
