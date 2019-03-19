@@ -101,3 +101,4 @@ D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Sqlinjection\Sqlinjection\obj\Deb
 D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Sqlinjection\Sqlinjection\obj\Debug\Sqlinjection.pdb
 D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Sqlinjection\Sqlinjection\obj\Debug\Sqlinjection.Migrations.CreacionTabla.resources
 D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Sqlinjection\Sqlinjection\obj\Debug\Sqlinjection.csproj.GenerateResource.Cache
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\Sqlinjection\Sqlinjection\obj\Debug\Sqlinjection.Migrations.ProcedimientoAlmacenado.resources

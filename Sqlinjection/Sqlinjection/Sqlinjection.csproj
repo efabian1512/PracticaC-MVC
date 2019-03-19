@@ -205,6 +205,10 @@
     <Compile Include="Migrations\201903181616181_CreacionTabla.Designer.cs">
       <DependentUpon>201903181616181_CreacionTabla.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903191309583_ProcedimientoAlmacenado.cs" />
+    <Compile Include="Migrations\201903191309583_ProcedimientoAlmacenado.Designer.cs">
+      <DependentUpon>201903191309583_ProcedimientoAlmacenado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -288,6 +292,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201903181616181_CreacionTabla.resx">
       <DependentUpon>201903181616181_CreacionTabla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903191309583_ProcedimientoAlmacenado.resx">
+      <DependentUpon>201903191309583_ProcedimientoAlmacenado.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
