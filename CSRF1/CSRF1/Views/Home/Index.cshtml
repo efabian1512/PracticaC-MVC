@@ -1,0 +1,35 @@
+﻿@model List<CSRF1.Models.Cuenta>
+    @{
+        ViewBag.Title = "Home Page";
+    }
+
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { @class = "form-horiztal", role = "form" }))
+    {
+        @Html.AntiForgeryToken()
+        <label for="Cuenta">Cuenta</label> <input type="text" id="Cuenta" name="Cuenta" />
+        <input type="submit" value="Crear" />
+    }
+
+    
+
+        <table class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Id Cuenta</th>
+                    <th>Monto</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var cuenta in Model)
+                {
+                    <tr>
+                        <td>@cuenta.IdCuenta</td>
+                        <td>@cuenta.Monto</td>
+                    </tr>
+
+
+                }
+
+
+            </tbody>
+        </table>

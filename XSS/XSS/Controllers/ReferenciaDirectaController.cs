@@ -34,7 +34,7 @@ namespace XSS.Controllers
         {
             using (ApplicationDbContext db = new ApplicationDbContext())
             {
-                var Id = id;
+                
                 var modelo = new RegisterViewModel();
                 var usuario = db.Users.Where(x => x.NumeroDeCuenta == id).FirstOrDefault();
                  var cuenta = usuario.NumeroDeCuenta;
