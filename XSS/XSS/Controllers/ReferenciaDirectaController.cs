@@ -15,11 +15,13 @@ namespace XSS.Controllers
         {
             using(ApplicationDbContext db = new ApplicationDbContext())
             {
-                //var id = User.Identity.GetUserId();
-                //var usuario = db.Users.Where(x => x.Id == id).FirstOrDefault();
-                //var cuenta = usuario.NumeroDeCuenta;
-               //ViewBag.Cuenta = cuenta;
-                return View();
+                var modelo = new RegisterViewModel();
+                var id = User.Identity.GetUserId();
+                var usuario = db.Users.Where(x => x.Id == id).FirstOrDefault();
+                var cuenta = usuario.NumeroDeCuenta;
+                modelo.NumeroDeCuenta = cuenta;
+               // ViewBag.Cuenta = cuenta;
+                return View(modelo);
 
             }
             
@@ -27,14 +29,44 @@ namespace XSS.Controllers
 
         // GET: ReferenciaDirecta
         [Authorize]
+
         public ActionResult InformacionDelaCuenta(string id)
         {
             using (ApplicationDbContext db = new ApplicationDbContext())
             {
-                var cuenta = db.Users.Where(x => x.NumeroDeCuenta == id);
-                return View(cuenta);
+                var Id = id;
+                var modelo = new RegisterViewModel();
+                var usuario = db.Users.Where(x => x.NumeroDeCuenta == id).FirstOrDefault();
+                 var cuenta = usuario.NumeroDeCuenta;
+                modelo.NumeroDeCuenta = cuenta;
+                if(modelo.NumeroDeCuenta != null)
+                {
+                    modelo.MontoDisponible = usuario.MontoDisponible;
+                    var Idlogueado = User.Identity.GetUserId();
+                    var usuariologueado = db.Users.Where(x => x.Id == Idlogueado).FirstOrDefault();
+                    var CuentaLogueado = usuariologueado.NumeroDeCuenta;
+                    if(CuentaLogueado == id)
+                    {
+                        return View(modelo);
+
+                    }else
+                    {
+                        return RedirectToAction("Login", "Account");
+                    }
+
+                   
+                }else
+                {
+                    return RedirectToAction("Index");
+
+                }
+
+
+
+                
 
             }
+
            
             
 

@@ -5,7 +5,8 @@
 }
 
 
-@Html.ActionLink(@Model.NumeroDeCuenta,"InformacionDelaCuenta","ReferenciaDirecta",new { Cuenta=Model.NumeroDeCuenta})
+@Html.ActionLink(Model.NumeroDeCuenta,"InformacionDelaCuenta","ReferenciaDirecta",new { id=Model.NumeroDeCuenta},null)
+    @*@Html.ActionLink("prueba", "InformacionDelaCuenta", "ReferenciaDirecta")*@
 
-<h2>Index</h2>
+    <h2>Index</h2>
 
