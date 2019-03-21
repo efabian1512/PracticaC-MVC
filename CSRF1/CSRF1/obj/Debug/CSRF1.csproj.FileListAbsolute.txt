@@ -101,3 +101,7 @@ D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\CSRF1\CSRF1\obj\Debug\CSRF1.dll
 D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\CSRF1\CSRF1\obj\Debug\CSRF1.pdb
 D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\CSRF1\CSRF1\obj\Debug\CSRF1.Migrations.Inicial.resources
 D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\CSRF1\CSRF1\obj\Debug\CSRF1.csproj.GenerateResource.Cache
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\CSRF1\CSRF1\obj\Debug\CSRF1.Migrations.Cambio.resources
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\CSRF1\CSRF1\obj\Debug\CSRF1.Migrations.Ultima.resources
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\CSRF1\CSRF1\obj\Debug\CSRF1.Migrations.Ultimita.resources
+D:\Git\Proyectos\Curso ASPNetMVC\PracticaC-MVC\CSRF1\CSRF1\obj\Debug\CSRF1.Migrations.Ultimate.resources

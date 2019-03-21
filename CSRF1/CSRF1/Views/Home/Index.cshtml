@@ -6,8 +6,8 @@
     @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { @class = "form-horiztal", role = "form" }))
     {
         @Html.AntiForgeryToken()
-        <label for="Cuenta">Cuenta</label> <input type="text" id="Cuenta" name="Cuenta" />
-        <input type="submit" value="Crear" />
+        <label for="monto">Monto</label> <input type="number" id="monto" name="monto" />
+        <input type="submit" value="Insertar Monto" />
     }
 
     
@@ -23,7 +23,7 @@
                 @foreach (var cuenta in Model)
                 {
                     <tr>
-                        <td>@cuenta.IdCuenta</td>
+                        <td>@cuenta.Id</td>
                         <td>@cuenta.Monto</td>
                     </tr>
 

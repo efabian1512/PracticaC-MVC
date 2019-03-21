@@ -205,11 +205,27 @@
     <Compile Include="Migrations\201903202052555_Inicial.Designer.cs">
       <DependentUpon>201903202052555_Inicial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903211511314_Cambio.cs" />
+    <Compile Include="Migrations\201903211511314_Cambio.Designer.cs">
+      <DependentUpon>201903211511314_Cambio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903211627490_Ultima.cs" />
+    <Compile Include="Migrations\201903211627490_Ultima.Designer.cs">
+      <DependentUpon>201903211627490_Ultima.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903211638473_Ultimita.cs" />
+    <Compile Include="Migrations\201903211638473_Ultimita.Designer.cs">
+      <DependentUpon>201903211638473_Ultimita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903211642273_Ultimate.cs" />
+    <Compile Include="Migrations\201903211642273_Ultimate.Designer.cs">
+      <DependentUpon>201903211642273_Ultimate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\Persona.cs" />
+    <Compile Include="Models\Cuenta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -288,6 +304,18 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201903202052555_Inicial.resx">
       <DependentUpon>201903202052555_Inicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903211511314_Cambio.resx">
+      <DependentUpon>201903211511314_Cambio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903211627490_Ultima.resx">
+      <DependentUpon>201903211627490_Ultima.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903211638473_Ultimita.resx">
+      <DependentUpon>201903211638473_Ultimita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903211642273_Ultimate.resx">
+      <DependentUpon>201903211642273_Ultimate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

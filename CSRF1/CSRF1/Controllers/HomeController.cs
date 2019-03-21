@@ -20,7 +20,7 @@ namespace CSRF1.Controllers
         public ActionResult Index()
         {
             var Idusuario = User.Identity.GetUserId();
-            var usuario = db.Users.Where(x => x.Id == Idusuario);
+           // var usuario = db.Users.Where(x => x.Id == Idusuario);
 
 
             CuentasUsuario = db.Cuentas.Where(x => x.IdUsuario == Idusuario).ToList();
@@ -32,12 +32,15 @@ namespace CSRF1.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Index(int monto)
         {
+            var prueba = monto;
 
             var usuarioId = User.Identity.GetUserId();
 
-            var nuevacuenta = db.Cuentas.Add(new Cuenta() { Monto = monto, IdUsuario = usuarioId });
-            CuentasUsuario = db.Cuentas.Where(x => x.IdUsuario == usuarioId).ToList();
+            var cuenta = db.Cuentas.Add(new Cuenta() { Monto = monto, IdUsuario = usuarioId });
+            //var cuenta2 = db.Cuentas.Add(new Cuenta() { Monto = 300, IdUsuario = "123456789" });
             db.SaveChanges();
+            CuentasUsuario = db.Cuentas.Where(x => x.IdUsuario == usuarioId).ToList();
+
             return View(CuentasUsuario);
         }
 
