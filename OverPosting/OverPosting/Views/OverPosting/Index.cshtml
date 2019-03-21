@@ -1,0 +1,37 @@
+﻿
+@model List<OverPosting.Models.Comentario>
+@{
+    ViewBag.Title = "Index";
+}
+
+@using(Html.BeginForm("CrearComentario","OverPosting",FormMethod.Post,new {@class ="form-horizontal", role="form" }))
+{
+    @Html.AntiForgeryToken();
+    <textarea name="Contenido"></textarea>
+    <br/>
+    <input type="submit" value="Enviar" />
+}
+
+
+<table class="table table-striped">
+
+    <thead>
+        <tr>
+            <th>Contenido</th>
+            <th>Fecha</th>
+            <th>Usuario</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var comentario in Model)
+        {
+            <tr>
+                <td>@comentario.Contenido</td>
+                <td>@comentario.Creado</td>
+                <td>@comentario.Usuario</td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+
