@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="col-separador">
+    <h4>C#(Ajax)</h4>
+    @using (Ajax.BeginForm("Duplicar", "Home",
+                        new AjaxOptions()
+                        {
+                            HttpMethod = "POST",
+                            InsertionMode = InsertionMode.Replace,
+                            UpdateTargetId = "resultado-ajax"
+
+                        }))
+                     {
+                         <span>Cantidad a duplicar:</span> <input type="number" name="cantidad"/>
+                         <input class="btn btn-primary" type="submit" value="Calcular" name="btn-cantidad-ajax"/>
+                         <div>Resultado: <span id="resultado-ajax"></span></div>
+                      
+                     }
+    </div>
+
+                
+    </div>
+</div>

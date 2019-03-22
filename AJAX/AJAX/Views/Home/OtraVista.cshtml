@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "OtraVista";
+}
+
+<h2>OtraVista</h2>
+@Html.TextBox("txtDuplicador")
+<input type="button" value="Duplicar!" id="btnDuplicar"/>
+<br/>
+Duplicado: <span id="spanDuplicado"></span>
+
+@section scripts{
+    <script>
+        $(function () {
+            //Ejemplo 1: jQuery.post simple
+            $("#btnDuplicar").click(function () {
+
+                var url = "@Url.Action("Duplicador","Home")";
+                var cantidad = $("#txtDuplicador").val();
+                var data = { cantidad: cantidad };
+
+                //jQuery 1.5+
+                $.post(url, data).done(function (data) {
+
+                    //se ejecuta si la operacion fue un exito
+                    $("#spanDuplicado").html(data);
+
+                }).fail(manejarErrorAjax).always(function () {
+
+                    //Esta function siempre se ejecuta
+                });
+            });
+
+            function manejarErrorAjax(err) {
+
+                //err.responseText es el texto del error (no siempre recomnedable mostrar)
+                console.log(err.responseText);
+            }
+
+        });
+        
+    </script>
+    
+    
+    }
+
