@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Title = "OtraMas";
+}
+
+@*<h2>OtraMas</h2>
+ 
+<h3>Ejemplo 2: jQuery.post enviando un objeto</h3>
+<div id="div-alerta">
+
+    <label id="mensaje-alerta"></label>
+    <input type="button" id="btn-cerrar-alerta" />
+</div>*@
+
+<div>
+    <div>
+        
+        <label>Nombre:</label>
+        @*@Html.TextBox("txtNombrePersona")*@
+        
+        <input type="text" id="txtNombre" />
+    </div>
+    <div>
+        <label>Edad:</label>
+        
+        @*@Html.Num("txtEdadPersona")*@
+        <input type="number" id="txtEdad" />
+    </div>
+    
+    <input type="button" value="Crear" id="btnCrearPersona" />
+</div>
+
+@section scripts{
+
+    <script>
+
+
+        $(function () {
+            $("#btnCrearPersona").click(function () {
+
+                var url = "@Url.Action("CrearPersona","Home")";
+                var nombre = $("#txtNombre").val();
+                var edad = $("#txtEdad").val();
+                var data = { Nombre: nombre, Edad: edad };
+
+                $.post(url, data).done(function (data) {
+                    if (data.Ok) {
+                        alert(data.Mensaje);
+                    } else {
+                        alert(data.Mensaje);
+                    }
+                // $("#mensaje-alerta").htm(data.Mesaje)
+                }).fail(manejarErrorAjax);
+            });
+            function manejarErrorAjax(err) {
+
+                //err.responseText es el texto del error (no siempre recomnedable mostrar)
+                console.log(err.responseText);
+            }
+         
+            });
+
+        
+    </script>
+
+
+}

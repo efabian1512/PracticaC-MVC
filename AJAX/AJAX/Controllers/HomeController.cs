@@ -16,6 +16,11 @@ namespace AJAX.Controllers
         {
             return View();
         }
+        public ActionResult OtraMas()
+        {
+            return View();
+        }
+
         public ActionResult Duplicar(int cantidad)
         {
             var duplica = cantidad * 2;
@@ -29,6 +34,43 @@ namespace AJAX.Controllers
             var resultado = cantidad * 2;
             return Json(resultado);
 
+        }
+        public ActionResult CrearPersona(Persona persona)
+        {
+            var resultado = new BaseRespuesta();
+            try
+            {
+               if(persona.Edad < 18)
+                {
+                    throw new ApplicationException("La persona no puede ser menor de edad.");
+                }
+
+                resultado.Mensaje = "Persona creada correctamente";
+                resultado.Ok = true;
+            }
+            catch (Exception ex)
+            {
+                resultado.Ok = false;
+                resultado.Mensaje = ex.Message;
+            }
+            return Json(resultado);
+        }
+        public ActionResult Otra()
+        {
+            return View();
+        }
+        public PartialViewResult SeccionPrueba()
+        {
+            var personas = new List<Persona>() {
+            new Persona() {Nombre="Edwin" , Edad=29 },
+            new Persona() {Nombre="Rossi",Edad=28 },
+            new Persona() {Nombre="Omar",Edad=26 },
+            new Persona() {Nombre="Deivi",Edad=29 },
+            new Persona() {Nombre="Frankely",Edad=21 },
+
+            };
+
+            return PartialView("_Prueba", personas);
         }
 
 
@@ -45,5 +87,17 @@ namespace AJAX.Controllers
 
             return View();
         }
+
+
+    }
+    public class Persona
+    {
+        public string Nombre { get; set; }
+        public int Edad { get; set; }
+    }
+    public class BaseRespuesta{
+
+        public string Mensaje { get; set; }
+        public bool Ok { get; set; }
     }
 }

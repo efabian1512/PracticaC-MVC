@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Otra";
+}
+
+<h2>Otra</h2>
+
+<input type="button" value="Cargar" id="btnCargar"/>
+<div id="divGet">
+
+</div>
+
+@section scripts{
+    <script>
+        $(function(){
+
+            $("#btnCargar").click(function () {
+
+                $(this).prop("disabled", "disabled");
+                var url = "@Url.Action("SeccionPrueba","Home")";
+                $.get(url).done(function (data) {
+
+                    $("#divGet").append(data);
+
+                }).fail(manejarErrorAjax);
+
+            });
+
+
+            function manejarErrorAjax(err) {
+                console.log(err.responseText);
+            
+            }
+        });
+</script>
+    }
+
+    
+
