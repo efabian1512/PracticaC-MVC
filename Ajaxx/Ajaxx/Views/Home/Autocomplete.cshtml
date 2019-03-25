@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Autocomplete";
+}
+
+<h2>Autocomplete</h2>
+<label for="persona">Nombre</label>
+<input type="text" name="persona" id="persona" />
+
+
+@section scripts{
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/Scripts/jquery-ui-1.12.1.js"></script>
+
+    <script> 
+        $(function () {
+            $("#persona")({
+                source: "Home/BuscaPersonas"
+            });
+        });
+    
+    </script>
+    
+    }
+
+
+
+

@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "AjaxForm";
+}
+
+<h3>Ajax.ActionLink - RouteValues</h3>
+
+
+
+@Ajax.ActionLink("Cargar Seccion","CargarSeccion",null,new AjaxOptions()
+{
+    HttpMethod="GET",
+    InsertionMode=InsertionMode.Replace,
+    UpdateTargetId = "resultado"
+}, new { @class = "btn btn-success" })
+
+<div id="resultado">
+
+</div>
+
+@section scripts{
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js">
+
+    </script>
+    }
+
