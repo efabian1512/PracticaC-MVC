@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Ajax2";
+}
+
+<h2>Ajax2</h2>
+
+@using (Ajax.BeginForm("ConEspera", "Home", new AjaxOptions()
+{
+
+    HttpMethod = "POST",
+    InsertionMode = InsertionMode.Replace,
+    UpdateTargetId = "spanDuplicado",
+    LoadingElementId = "loading",
+    Confirm = "Esta seguro que desea duplicar el numero?"
+
+}))
+{
+    <input type="number" name="cantidad" />
+    <input type="submit" value="Duplicar!" />
+    <img src="~/Gif/tenor.gif" style="display:none;width:300px" id="loading"  />
+}
+Resultado:<span id="spanDuplicado"></span>
+
+@section scripts{
+
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    }

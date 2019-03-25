@@ -1,0 +1,23 @@
+﻿@{ 
+    ViewBag.Nombre = "Duplicador de cantidades";
+}
+
+@using (Ajax.BeginForm("Duplicame","Home", new AjaxOptions()
+{
+    HttpMethod = "POST",
+    InsertionMode = InsertionMode.Replace,
+    UpdateTargetId = "spanDuplicado"
+
+}
+
+))
+{
+    <input type="number" name="cantidad" /><br />
+    <input type="submit" value="Duplicar!" />
+}
+Resultado:<span id="spanDuplicado"></span>
+
+@section scripts{
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    
+    }

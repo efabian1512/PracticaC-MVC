@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "Funciones";
+}
+
+<h2>Funciones</h2>
+
+@using (Ajax.BeginForm("Duplicame", "Home", new AjaxOptions()
+{
+    HttpMethod = "POST",
+    InsertionMode = InsertionMode.Replace,
+    UpdateTargetId = "spanDuplicado",
+    OnBegin = "onBegin",
+    OnComplete = "onComplete",
+    OnFailure = "onFailure",
+    OnSuccess = "onSucess"
+}))
+{
+    <input type="number" name="cantidad" />
+    <input type="submit" value="Duplicar" />
+
+}
+Resultado:<span id="spanDuplicado"></span>
+
+@section Scripts{
+    
+  <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>  
+    <script>
+
+        function onBegin(respuesta) {
+            console.log("begin");
+
+        }
+        function onSucess(respuesta) {
+            console.log("onSuccess");
+        }
+        function onComplete(respuesta) {
+            console.log("complete");
+            console.log(respuesta)
+        }
+        function onFailure(a) {
+            console.log("error");
+            console.log(a);
+
+
+        }
+    </script>
+    }
+    
+    
+    
+    
+

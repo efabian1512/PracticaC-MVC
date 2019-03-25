@@ -16,6 +16,34 @@ namespace AJAX.Controllers
         {
             return View();
         }
+        public ActionResult Funciones()
+        {
+            return View();
+        }
+        public ActionResult OtraAjax()
+        {
+            return View();
+        }
+        [HttpPost]
+        public JsonResult Duplicame(double cantidad)
+        {
+            var resultado = cantidad * 2;
+            return Json(resultado);
+
+
+        }
+        public ActionResult Ajax2()
+        {
+            return View();
+
+        }
+        [HttpPost]
+        public JsonResult ConEspera(double cantidad)
+        {
+            System.Threading.Thread.Sleep(3000);
+            var duplicado = cantidad * 2;
+            return Json(duplicado);
+        }
         public ActionResult OtraMas()
         {
             return View();
